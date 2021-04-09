@@ -1,6 +1,6 @@
 {
   "name": "mob-paycheck",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Modulo de Contracheque",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
