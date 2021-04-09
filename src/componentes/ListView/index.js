@@ -1,9 +1,15 @@
-import React from 'react'
-import { View, Text } from 'react-native'
+import React, { useState } from 'react'
+import { View, Text, Button } from 'react-native'
 
 
 export default ListView = () => {
-    
+    const [count, setCount] = useState();
+
+    const handleButton = () => {
+        setCount(oldValue => oldValue + 1);
+    }
+
+
 
     return (
         <View style={{flex:1, padding: 10}}>
@@ -18,6 +24,8 @@ export default ListView = () => {
                     <View style={{flex: 1, backgroundColor: 'red'}} />
                     <View style={{flex: 1, backgroundColor: 'black'}} />
                     <View style={{flex: 1, backgroundColor: 'green'}} />
+                    <Text>{count}</Text>
+                    <Button onPress={handleButton} title="Click aqui" />
                  </View>
         </View>
     )
